@@ -21,11 +21,13 @@ class EmployeeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private static int TYPE_CALL = 1;
     private static int TYPE_EMAIL = 2;
+    TestModelClass testModelClass;
 
-    public EmployeeAdapter( Context context,ArrayList<Employee> employees) {
+    public EmployeeAdapter( Context context,ArrayList<Employee> employees,TestModelClass testModelClass) {
 
         this.employees = employees;
         this.context = context;
+        this.testModelClass=testModelClass;
     }
 
     @NonNull
@@ -89,6 +91,8 @@ class EmployeeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }
 
         public void setCallDetails(Employee employee) {
+
+            //txtName.setText(testModelClass.getMyName());
 
             txtName.setText(employee.getName());
             txtAddress.setText(employee.getAddress());

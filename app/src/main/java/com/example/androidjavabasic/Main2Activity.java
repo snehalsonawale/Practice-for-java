@@ -24,7 +24,12 @@ public class Main2Activity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         employees = new ArrayList<>();
 
-        adapter = new EmployeeAdapter( this,employees);
+        TestModelClass testModelClass = new TestModelClass();
+        testModelClass.setMyName("nehal");
+        testModelClass.setLastName("sonawale");
+
+
+        adapter = new EmployeeAdapter( this,employees,testModelClass);
 
         recyclerView.setAdapter(adapter);
         createListData();
