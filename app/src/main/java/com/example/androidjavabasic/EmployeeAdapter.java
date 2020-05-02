@@ -95,6 +95,7 @@ class EmployeeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }
     }
 
+
     class EmailViewHolder extends RecyclerView.ViewHolder {
 
         private TextView txtName;
