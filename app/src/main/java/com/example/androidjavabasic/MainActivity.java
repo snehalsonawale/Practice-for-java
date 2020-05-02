@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private PlanetAdapter adapter;
     private ArrayList<Planet> planetArrayList;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
