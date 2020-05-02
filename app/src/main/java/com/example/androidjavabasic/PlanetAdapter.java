@@ -61,14 +61,6 @@ class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.ViewHolder> {
 
 
 
-
-
-
-
-
-
-
-
     }
 
 
