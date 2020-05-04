@@ -20,19 +20,19 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        employees = new ArrayList<>();
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);/// recyclview bind by id
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));/// layout manager to specify vertical by default
+        employees = new ArrayList<>(); /// arraylist specified here
 
-        TestModelClass testModelClass = new TestModelClass();
-        testModelClass.setMyName("nehal");
+        TestModelClass testModelClass = new TestModelClass(); /// model class declaire here
+        testModelClass.setMyName("nehal");// value set to model class items
         testModelClass.setLastName("sonawale");
 
 
-        adapter = new EmployeeAdapter( this,employees,testModelClass);
+        adapter = new EmployeeAdapter( this,employees,testModelClass);// addapter with pass value to it
 
-        recyclerView.setAdapter(adapter);
-        createListData();
+        recyclerView.setAdapter(adapter);// set adapter to recyclview
+        createListData();/// simple medthod
 
 
 
