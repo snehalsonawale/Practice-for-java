@@ -12,6 +12,9 @@ public class Main3Activity extends AppCompatActivity {
     TextView tv1,tv2;
     int valuesis;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
